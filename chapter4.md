@@ -170,6 +170,10 @@ The code in iPython shell was entered to address the requirements.  Try to run t
 ```{python}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
+import pandas as pd
+movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+
+import numpy as np
 
 ```
 
@@ -193,19 +197,11 @@ print(a)
 # SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
 
 test_object("a",
-            undefined_msg = "Don't remove the definition of the predefined `ints` object.",
-            incorrect_msg = "Don't change the definition of the predefined `ints` object.")
+            undefined_msg = "Don't remove the definition of variable *a*.",
+            incorrect_msg = "Check your calculation again.")
 
 success_msg("Good job! This was a semantic error because we missed entering 13.")
 
-```
-*** =sct
-```{python}
-# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
-
-msg_bad = "That is not correct."
-msg_success = "Excellent!!  I think you have mastered errors."
-test_mc(3, [msg_bad, msg_bad, msg_success])
 ```
 
 --- type:MultipleChoiceExercise lang:python xp:50 skills:1 key:69e50c50af
