@@ -624,45 +624,17 @@ success_msg("Nice job; Assignment statements must put variable on the left and e
 ```
 
 
---- type:MultipleChoiceExercise lang:python xp:50 skills:1 key:36648e8de9
-## Try Something New
-
-Take a look at the code below.  Try running it in the iPython shell.
-
-*print(4/0)*
-
-What type of error occurs?  Can you explain what caused this error?
-
-
-*** =instructions
-- Syntax error, did not follow Python rules
-- Runtime error, followed the rules but something else was wrong when I ran it
-- Semantic error, everything worked but not what I was expecting
-
-*** =hint
-- With runtime errors, look for bad direction to computer.  See if the instruction you gave is even possible.
-
-*** =pre_exercise_code
-```{python}
-```
-
-*** =sct
-```{python}
-# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
-
-msg_bad = "That is not correct."
-msg_success = "Exactly! This runtime error was caused by telling the computer to divide by zero; something we know is not possible.  In programs, divide by zero can be more subtle than this.  Now you know what the error looks like, and what to look for when it does occur."
-test_mc(2, [msg_bad, msg_success, msg_bad])
-
-```
-
 --- type:MultipleChoiceExercise lang:python xp:50 skills:1 key:4d375bba62
 ## Operation Shortcuts
 
 Take a look at the code below.  Try running it in the iPython shell.
 
 *a = b = 5*
+
+
 *c = b + 2*
+
+
 *b += 2*
 
 What are the values of *a*, *b*, and *c* once run?
